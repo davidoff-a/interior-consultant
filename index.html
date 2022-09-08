@@ -1,67 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
+<head>
+  <meta charset="utf-8"/>
+  <meta
       content="width=device-width, initial-scale=1,
   maximum-scale=5"
-    />
-    <link
+      name="viewport"
+  />
+  <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
-    />
-    <link
+  />
+  <link
       href="https://fonts.googleapis.com/css?family=Lora:regular,500,600,700,italic,500italic,600italic,700italic"
       rel="stylesheet"
-    />
-    <link
+  />
+  <link
       href="https://fonts.googleapis.com/css?family=Crimson+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
-    />
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
+  />
+  <link href="./assets/devchallenges.png" rel="icon"/>
+  
+  <link
+      href="https://devchallenges.io/"
       rel="shortcut icon"
       type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
+  />
+  
+  <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <title>Devchallenges</title>
-
-    <style></style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container row">
-          <h1>this interior</h1>
-          <nav class="nav">
-            <ul class="nav-menu">
-              <li class="nav-menu__item">Home</li>
-              <li class="nav-menu__item">Collection</li>
-              <li class="nav-menu__item">About</li>
-              <li class="nav-menu__item">Contact</li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main class="main">
-        <div class="container row">
-          <div class="content__img"></div>
-          <div class="content__text"></div>
-        </div>
-      </main>
-      <footer class="footer">
-        <p>created by <strong>davidoff.a</strong> - devChallenges.io</p>
-      </footer>
+  />
+  
+  <link href="./css/style.css" rel="stylesheet"/>
+  
+  <title>Devchallenges</title>
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="container row">
+      <div class="logo">this interior</div>
+      <menu class="menu-nav row">
+        <li class="menu-nav__item active">Home</li>
+        <li class="menu-nav__item">Collection</li>
+        <li class="menu-nav__item">About</li>
+        <li class="menu-nav__item">Contact</li>
+      </menu>
+      <div class="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
     </div>
-  </body>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="main__wrapper row start">
+        <div class="interior__text">
+          <h1 class="interior__heading">Modern interior</h1>
+          <div class="interior__descr">A full-Service residential & commercial interior design and staging company
+            offering professional organizing & eco-services.
+          </div>
+        </div>
+        <div class="interior__pic">
+          <img alt="interior" class="interior__img" src="./assets/photo1.png">
+          <div class="signature row col start">
+            <div class="signature__author author row">
+              <img alt="author" class="author__img" src="./assets/photo2.png">
+              <div class="author__about row col start">
+                <div class="author__name">Aliza Webber</div>
+                <div class="author__job-title">interior designer</div>
+              </div>
+            </div>
+            <div class="signature__title">Designed in 2020 by Aliza Webber</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      created by davidoff-a - devChallenges.io
+    </div>
+  </footer>
+</div>
+<script src="./js/script.js"></script>
+</body>
+
+
 </html>

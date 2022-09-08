@@ -1,0 +1,115 @@
+.main {
+  width: 100%;
+  flex: 1 1 auto;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 85px;
+  }
+}
+
+
+.interior {
+  &__text {
+    height: 316px;
+    max-width: 35%;
+    flex: 0 1 40%;
+    font-size: 12px;
+  }
+
+  &__heading {
+    font-family: $ffLora;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4em;
+    line-height: 125%;
+  }
+
+  &__descr {
+    margin-top: 40px;
+    width: 100%;
+    height: 145px;
+    position: relative;
+    font-family: $ffMon;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 125%;
+
+    &::before {
+      content: 'Read more →';
+      position: absolute;
+      bottom: -90%;
+      left: 0;
+      font-family: $ffMon;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1em;
+      line-height: 125%;
+    }
+  }
+
+
+  &__pic {
+    flex: 0 1 620px;
+    max-width: 50%;
+    position: relative;
+    object-fit: contain;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.signature {
+  width: 410px;
+  height: 190px;
+  padding: 16px 26px 34px 26px;
+  position: absolute;
+  bottom: -24%;
+  right: 15%;
+  background-color: $bg-color;
+  font-size: 14px;
+
+  &__author {
+    height: 50px;
+    width: 175px;
+  }
+
+  &__title {
+    width: 287px;
+    height: 62px;
+    font-family: $ffLora;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 110%;
+  }
+}
+
+.author {
+  &__img {
+    height: 100%;
+    width: auto;
+    border-radius: 100%;
+  }
+
+  &__name {
+    font-family: $ffMon;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 130%;
+  }
+
+  &__job-title {
+    font-family: $ffMon;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 130%;
+  }
+}

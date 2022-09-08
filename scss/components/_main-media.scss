@@ -1,0 +1,70 @@
+@include desktop {
+  .signature {
+    width: 320px;
+    right: 3%;
+  }
+  .interior {
+    &__text {
+      font-size: 10px;
+    }
+
+    &__descr:before {
+      bottom: -50%
+    }
+  }
+
+}
+
+@include tablet {
+  .main {
+    &__wrapper {
+      &.row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  .interior {
+    &__text {
+      font-size: 12px;
+      flex: 1 1 45%;
+      max-width: 80%;
+    }
+
+    &__descr:before {
+      bottom: -25%
+    }
+
+    &__pic {
+      max-width: 80%;
+    }
+  }
+  .signature {
+    font-size: 12px;
+    bottom: 10%;
+  }
+}
+
+@include mobile {
+
+  .interior {
+    &__text {
+      font-size: 8px;
+      flex: 1 1 27%;
+      max-width: 90%;
+    }
+
+    &__descr:before {
+      bottom: -1%
+    }
+
+    &__pic {
+      max-width: 90%;
+      flex: 1 1 30%;
+    }
+  }
+  .signature {
+    position: static;
+  }
+
+}
