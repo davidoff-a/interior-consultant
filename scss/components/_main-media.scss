@@ -6,6 +6,8 @@
   .interior {
     &__text {
       font-size: 10px;
+      max-width: 45%;
+      flex-basis: 45%;
     }
 
     &__descr:before {
@@ -18,6 +20,10 @@
 @include tablet {
   .main {
     &__wrapper {
+      height: auto;
+      min-height: 100%;
+      padding-top: 10px;
+
       &.row {
         flex-direction: column;
         align-items: center;
@@ -29,6 +35,7 @@
       font-size: 12px;
       flex: 1 1 45%;
       max-width: 80%;
+      margin-bottom: 50px;
     }
 
     &__descr:before {
@@ -37,11 +44,14 @@
 
     &__pic {
       max-width: 80%;
+      margin-bottom: 130px;
     }
   }
   .signature {
+    height: 150px;
+    padding: 1.3em 1.5em 2em 1.5em;
     font-size: 12px;
-    bottom: 10%;
+    bottom: -100px;
   }
 }
 
@@ -52,19 +62,25 @@
       font-size: 8px;
       flex: 1 1 27%;
       max-width: 90%;
+      margin-bottom: 20px;
+
     }
 
     &__descr:before {
-      bottom: -1%
+      bottom: 10px
     }
 
     &__pic {
       max-width: 90%;
       flex: 1 1 30%;
+      margin-bottom: 40px;
     }
   }
   .signature {
-    position: static;
+    font-size: 10px;
+    width: 250px;
+    height: 138px;
+    bottom: -20px
   }
 
 }
